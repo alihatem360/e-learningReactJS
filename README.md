@@ -1,4 +1,4 @@
-# اكاديمية فلاح للبرمجة 🎉
+# اكاديمية فلاح للبرمجة 🎉 | E-Learning ReactJS
 
 This is a website for online learning, built using ReactJS, Vite, and Tailwind CSS.
 
