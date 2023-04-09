@@ -1,0 +1,128 @@
+.material__home__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  margin: 12px auto;
+}
+
+.material__home__container > div {
+  /* flex: 1; */
+  position: relative;
+  width: 30%;
+  margin: 10px 15px;
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #2d2727;
+  overflow: hidden;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.material__home__container > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: calc(-100% + 6px);
+  width: 100%;
+  height: 100%;
+  background-color: #b18de9;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  /* border-radius: 12px; */
+}
+
+.material__home__container > div:hover:before {
+  bottom: 0;
+  border-radius: 12px;
+  background-color: #b391e8;
+}
+
+.material__home__container .material__home__conatiner__body h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+/* 
+    media query for tablet devices
+
+*/
+
+@media (max-width: 1024px) {
+  .material__home__container > div {
+    width: 40%;
+  }
+}
+
+/* 
+    media query for mobile devices
+*/
+
+@media (max-width: 768px) {
+  .material__home__container > div {
+    width: 100%;
+  }
+}
+
+.material__home__container .material__home__conatiner__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material__home__container .material__home__conatiner__footer img {
+  width: 90px;
+  height: 90px;
+}
+
+.material__home__container .material__home__conatiner__footer a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*
+add animation to .material__home__container .material__home__conatiner__footer a when hover on it
+*/
+
+.material__home__container > div:hover {
+  animation: animate 0.5s ease-in-out;
+  color: #fff;
+}
+.material__home__container > div:hover .material__home__conatiner__footer a {
+  color: #fff;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 
+    add animation rotate to .material__home__container .material__home__conatiner__footer img simply and easy when hover on div
+*/
+
+.material__home__container > div:hover .material__home__conatiner__footer img {
+  animation: rotate 0.5s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+}
