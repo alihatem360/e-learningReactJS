@@ -4,7 +4,7 @@ This is a website for online learning, built using ReactJS, Vite, and Tailwind C
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/yourusername/e-learning-website.git`
+1. Clone this repository: `https://github.com/alihatem360/e-learningReactJS.git`
 2. Install dependencies: `npm install`
 
 ## Usage
